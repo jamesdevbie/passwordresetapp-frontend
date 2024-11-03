@@ -31,7 +31,7 @@ const Register = () => {
       const response = await axios.post(URL, payLoad)
       if (response) {
         toast.success(response.data.message)
-        navigate('/')
+        navigate('/login')
       }
     } catch (error) {
       toast.error(error.data.response.message)
