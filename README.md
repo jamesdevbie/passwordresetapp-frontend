@@ -2,10 +2,11 @@
 
 This password reset app sends out an email with password reset link if the user account is valid.
 
-#Launch URL:
+# Launch URL:
+
 https://passwordresetapp-frontend.vercel.app/
 
-#How Does it Work?
+# How Does it Work?
 
 1. Home page launches with a simple UI, Navbar containing login and signup button.
 2. To create an account, click login and submit required details. This will re-direct to login page.
