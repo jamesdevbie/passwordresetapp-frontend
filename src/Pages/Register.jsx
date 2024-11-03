@@ -3,7 +3,7 @@ import { BiHide, BiShow } from 'react-icons/bi'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import axios from 'axios'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 import ShowContext from '../Context/ShowContext'
 
@@ -14,9 +14,6 @@ const Register = () => {
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
 
-  //   const [showlogin, setShowLogin] = useState(true)
-  // const [showsignup, setShowSignup] = useState(true)
-
   const { setShowSignup, setShowLogin } = useContext(ShowContext)
 
   useEffect(() => {
@@ -24,8 +21,7 @@ const Register = () => {
     setShowLogin(true)
   }, [])
 
-  //const URL = 'https://fsd-auth-backend-ejk8.onrender.com/api/auth/register'
-  const URL = 'http://localhost:5000/api/auth/register'
+  const URL = 'https://passwordresetapp-backend.onrender.com/api/auth/register'
   const payLoad = { name, email, password }
 
   const handleSubmit = async (e) => {

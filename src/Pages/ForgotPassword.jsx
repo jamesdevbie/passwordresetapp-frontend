@@ -16,7 +16,8 @@ const ForgotPassword = () => {
   }, [])
 
   const payLoad = { email }
-  const URL = 'http://localhost:5000/api/auth/forgot-password'
+  const URL =
+    'https://passwordresetapp-backend.onrender.com/api/auth/forgot-password'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -31,8 +32,6 @@ const ForgotPassword = () => {
     } catch (e) {
       toast.error(e.response.data.message)
     }
-
-    // toast.error(error.response.data.message)
   }
   return (
     <>

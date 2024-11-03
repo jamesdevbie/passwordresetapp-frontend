@@ -18,12 +18,9 @@ const Login = ({ setToken }) => {
   useEffect(() => {
     setShowLogin(false)
     setShowSignup(true)
-
-    //    setShowSignup(true)
   }, [])
 
-  //const URL = 'https://fsd-auth-backend-ejk8.onrender.com/api/auth/register'
-  const URL = 'http://localhost:5000/api/auth/login'
+  const URL = 'https://passwordresetapp-backend.onrender.com/api/auth/login'
   const payLoad = { email, password }
 
   const handleSubmit = async (e) => {

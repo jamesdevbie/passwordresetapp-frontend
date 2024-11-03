@@ -3,8 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import ShowContext from '../Context/ShowContext'
 
 const Navbar = () => {
-  const { showLogin, showSignup, setShowLogin, setShowSignup } =
-    useContext(ShowContext)
+  const { showLogin, showSignup } = useContext(ShowContext)
   const url = useLocation()
   return (
     <div>

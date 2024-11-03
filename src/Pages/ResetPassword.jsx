@@ -10,7 +10,7 @@ const ResetPassword = () => {
   const { randomstring } = useParams()
 
   const payLoad = { password }
-  const URL = `http://localhost:5000/api/auth/reset-password/${randomstring}`
+  const URL = `https://passwordresetapp-backend.onrender.com/api/auth/reset-password/${randomstring}`
 
   const handleSubmit = async (e) => {
     e.preventDefault()
