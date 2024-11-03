@@ -18,7 +18,7 @@ const ResetPassword = () => {
       const response = await axios.post(URL, payLoad)
       if (response) {
         toast.success(response.data.message)
-        navigate('/')
+        navigate('/login')
       }
     } catch (e) {
       toast.error(e.response.data.message)
