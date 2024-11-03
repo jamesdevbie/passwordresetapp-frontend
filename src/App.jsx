@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Register from './Pages/Register'
 import Login from './Pages/Login'
 import ResetPassword from './Pages/ResetPassword'
@@ -10,6 +10,8 @@ import Home from './Pages/Home'
 import ShowContextProvider from './Context/ShowContextProvider.jsx'
 
 const App = () => {
+  const [token, setToken] = useState('')
+
   return (
     <div className="flex justify-center items-center mt-[25vh]">
       <div>
